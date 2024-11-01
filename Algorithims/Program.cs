@@ -40,3 +40,13 @@ binaryTree.InOrder();
 //}
 
 
+////Insertion Sort
+
+//int[] numbersToSort = { 23, 1, 10, 5, 2 };
+//numbersToSort =  InsertionSort.Sort(numbersToSort);
+//foreach (int number in numbersToSort)
+//{
+//    Console.Write(number + ",");
+//}
+
+

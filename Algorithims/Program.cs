@@ -50,3 +50,25 @@ binaryTree.InOrder();
 //}
 
 
+//// Priority Queue With List
+//var priorityQueue = new PriorityQueueList();
+//Console.WriteLine(priorityQueue.RemoveMin());
+
+//priorityQueue.Insert(1);
+//priorityQueue.Insert(6);
+//priorityQueue.Insert(3);
+//priorityQueue.Insert(2);
+//priorityQueue.Insert(4);
+//priorityQueue.Insert(5);
+//priorityQueue.Print();
+
+//Console.WriteLine(priorityQueue.RemoveMin());
+//Console.WriteLine(priorityQueue.RemoveMin());
+//Console.WriteLine(priorityQueue.RemoveMin());
+//priorityQueue.Print();
+
+
+
+
+
+

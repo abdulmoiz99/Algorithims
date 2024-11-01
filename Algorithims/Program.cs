@@ -17,16 +17,26 @@ binaryTree.InOrder();
 */
 
 
-// Stack Implmenetation
-int[] numbersToInsert = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
-var stack = new Stack();
-foreach (int number in numbersToInsert)
-{
-    stack.Push(number);
-}
-while (!stack.IsEmpty())
-{
-    Console.WriteLine(stack.Pop());
-}
+//// Stack Implmenetation
+//int[] numbersToInsert = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
+//var stack = new Stack();
+//foreach (int number in numbersToInsert)
+//{
+//    stack.Push(number);
+//}
+//while (!stack.IsEmpty())
+//{
+//    Console.WriteLine(stack.Pop());
+//}
+
+
+////Selection Sort
+
+//int[] numbersToSort = { 4, 7, 2, 1, 9, 5, 3, 8, 0, 6 };
+//SelectionSort.Sort(ref numbersToSort);
+//foreach (int number in numbersToSort)
+//{
+//    Console.Write(number + ",");
+//}
 
 

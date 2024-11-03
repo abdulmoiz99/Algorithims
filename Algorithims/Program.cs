@@ -69,6 +69,58 @@ binaryTree.InOrder();
 
 
 
+//Suppose we are given two n-element sorted sequences A and B that should not
+//be viewed as sets (that is, A and B may contain duplicate entries). Give an O(n)-time
+//pseudo-code algorithm for computing a sequence representing the set A  B (with no
+//duplicates).
+
+//int[] array1 = { 1, 2, 5, 6, 10, 15, 18 };
+//int[] array2 = { 4, 7, 10, 18, 19, 20, 21 };
+//var list = new List<int>();
+//var sequence1 = new Sequence();
+//var sequence2 = new Sequence();
+
+
+//for (int i = 0; i < array1.Length; i++)
+//{
+//    sequence1.InsertLast(array1[i]);
+//    sequence2.InsertLast(array2[i]);
+//}
+
+//while (!sequence1.IsEmpty() && !sequence2.IsEmpty())
+//{
+//    if (sequence1.First() == sequence2.First())
+//    {
+//        list.Add(sequence1.RemoveFirst());
+//        sequence2.RemoveFirst();
+//    }
+//    else if (sequence1.First() < sequence2.First())
+//        list.Add(sequence1.RemoveFirst());
+//    else
+//        list.Add(sequence2.RemoveFirst());
+//}
+//while (!sequence1.IsEmpty())
+//{
+//    list.Add(sequence1.RemoveFirst());
+//}
+
+//while (!sequence2.IsEmpty())
+//{
+//    list.Add(sequence2.RemoveFirst());
+//}
+
+//Console.WriteLine("Sequence Result");
+//foreach (var item in list)
+//{
+//    Console.Write(item + ",");
+//}
+
+
+
+
+
+
+
 
 
 

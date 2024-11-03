@@ -133,6 +133,18 @@ binaryTree.InOrder();
 //Console.WriteLine(list.FindMiddleElement());
 
 
+//// QUEUE WITH 2 Stacks
+
+int[] array = { 1, 2, 3, 4, 5, 6 };
+var queue = new QueueWithStack();
+foreach (var item in array)
+{
+    queue.EnQueue(item);
+}
+while (!queue.IsEmpty())
+{
+    Console.Write(queue.Dequeue() + ",");
+}
 
 
 

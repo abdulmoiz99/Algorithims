@@ -38,18 +38,18 @@ namespace Algorithims
             Console.WriteLine();
         }
 
-        public int FindMiddleElement()
+        public int FindMiddleElement() // O(n)
         {
-            Node slow = header;
-            Node fast = header;
+            Node slow = header; // 1
+            Node fast = header; // 1
             
-            while(fast.next != null)
+            while(fast.next != null) // n/2 because fast will move 2 steps each time
             {
                 slow = slow.next;
                 fast = fast.next?.next;
             }
 
-            return slow.value;
+            return slow.value; // 1
         }
 
 

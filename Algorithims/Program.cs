@@ -135,15 +135,27 @@ binaryTree.InOrder();
 
 //// QUEUE WITH 2 Stacks
 
+//int[] array = { 1, 2, 3, 4, 5, 6 };
+//var queue = new QueueWithStack();
+//foreach (var item in array)
+//{
+//    queue.EnQueue(item);
+//}
+//while (!queue.IsEmpty())
+//{
+//    Console.Write(queue.Dequeue() + ",");
+//}
+
 int[] array = { 1, 2, 3, 4, 5, 6 };
-var queue = new QueueWithStack();
-foreach (var item in array)
+var stack = new StackWithQueue();
+foreach (int item in array)
 {
-    queue.EnQueue(item);
+    stack.Push(item);
 }
-while (!queue.IsEmpty())
+
+while (!stack.IsEmpty())
 {
-    Console.Write(queue.Dequeue() + ",");
+    Console.WriteLine(stack.Pop());
 }
 
 

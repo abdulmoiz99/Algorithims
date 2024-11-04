@@ -280,3 +280,28 @@ binaryTree.InOrder();
 
 //InplaceQuickSort.Sort(numbers);
 
+
+
+//// Check if Sequence Has Same Elements 
+
+//int[] sequence1 = { 1, 5, 9, 8, 7, 6, 6 };
+//int[] sequence2 = { 9, 5, 6, 7, 8, 6, 1 };
+
+//Console.WriteLine(HasSameElements(sequence1, sequence2));
+
+//bool HasSameElements(int[] sequence1, int[] sequence2)
+//{
+//    if (sequence1.Length != sequence2.Length) return false;
+
+//    Array.Sort(sequence1);
+//    Array.Sort(sequence2);
+
+//    for (int i = 0; i < sequence1.Length; i++)
+//    {
+//        if (sequence1[i] != sequence2[i]) return false;
+//    }
+//    return true;
+//}
+
+
+

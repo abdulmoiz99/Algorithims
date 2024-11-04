@@ -146,21 +146,73 @@ binaryTree.InOrder();
 //    Console.Write(queue.Dequeue() + ",");
 //}
 
-int[] array = { 1, 2, 3, 4, 5, 6 };
-var stack = new StackWithQueue();
-foreach (int item in array)
-{
-    stack.Push(item);
-}
+//int[] array = { 1, 2, 3, 4, 5, 6 };
+//var stack = new StackWithQueue();
+//foreach (int item in array)
+//{
+//    stack.Push(item);
+//}
 
-while (!stack.IsEmpty())
-{
-    Console.WriteLine(stack.Pop());
-}
-
-
+//while (!stack.IsEmpty())
+//{
+//    Console.WriteLine(stack.Pop());
+//}
 
 
 
+///// WHO WINS THE ELECTION 
 
+//int[] votes = { 1, 2, 1, 1, 3, 2 };
+
+//int winingCandidate = votes[0];
+//int voteCount = int.MinValue;
+//int winingVote = int.MinValue;
+
+//for (int i = 0; i < votes.Length; i++)
+//{
+//    for (int j = 0; j < votes.Length; j++)
+//    {
+//        if (votes[i] == votes[j])
+//        {
+//            voteCount++;
+//        }
+//    }
+//    if (voteCount > winingVote)
+//    {
+//        winingVote = voteCount;
+//        winingCandidate = votes[i];
+//    }
+//    voteCount = 0;
+//}
+//Console.WriteLine(winingCandidate);
+
+
+
+///// WHO WINS THE ELECTION 
+//var voteCounts = new Dictionary<int, int>();
+//int _winingCandidate = 0;
+//int _winingVote = int.MinValue;
+//for (int i = 0; i < votes.Length; i++)
+//{
+//    if (voteCounts.ContainsKey(votes[i]))
+//    {
+//        voteCounts[votes[i]]++;
+//    }
+//    else
+//    {
+//        voteCounts[votes[i]] = 1;
+//    }
+//    if (voteCounts[votes[i]] > _winingVote)
+//    {
+//        _winingCandidate = votes[i];
+//        _winingVote = voteCounts[votes[i]];
+//    }
+//}
+
+//Console.WriteLine(_winingCandidate);
+
+//foreach (var item in voteCounts)
+//{
+//    Console.WriteLine(item.Key + ": " + item.Value);
+//}
 

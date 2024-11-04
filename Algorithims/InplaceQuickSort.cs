@@ -2,18 +2,18 @@
 {
     internal class InplaceQuickSort
     {
-        public static void Sort(ref int[] array)
+        public static void Sort(int[] array)
         {
-            Sort(ref array, 0, array.Length - 1);
+            Sort(array, 0, array.Length - 1);
         }
 
-        private static void Sort(ref int[] array, int low, int high)
+        private static void Sort(int[] array, int low, int high)
         {
-            if (low < high) // Correct base condition
+            if (low < high) 
             {
                 int partitionIndex = Partition(array, low, high);
-                Sort(ref array, partitionIndex + 1, high);  // Sort right side
-                Sort(ref array, low, partitionIndex - 1);   // Sort left side
+                Sort(array, partitionIndex + 1, high);  // Sort right side
+                Sort(array, low, partitionIndex - 1);   // Sort left side
             }
         }
 
@@ -31,7 +31,6 @@
                 }
             }
 
-            // Place the pivot in its correct sorted position
             (array[j], array[high]) = (array[high], array[j]);
             return j;
         }

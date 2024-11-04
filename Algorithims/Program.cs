@@ -265,10 +265,18 @@ binaryTree.InOrder();
 //        leftPointer++;
 //    else
 //        rightPointer--;
-   
+
 //}
 
 //foreach (string obj in objects)
 //{
 //    Console.Write(obj + ", ");
 //}
+
+
+
+//// in place quick sort
+//int[] numbers = { 9, 7, 2, 5, 11, 6, 2, 14, 3, 10, 12 };
+
+//InplaceQuickSort.Sort(numbers);
+

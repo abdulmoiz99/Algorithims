@@ -1,4 +1,5 @@
 ﻿using Algorithims;
+using System.Net;
 
 
 
@@ -217,7 +218,57 @@ binaryTree.InOrder();
 //}
 
 
-// IN PLACE QUICK SORT
-int[] numbers = { 9, 7, 5, 11, 6, 2, 14, 3, 10, 12 };
+//// IN PLACE QUICK SORT
+//int[] numbers = { 9, 7, 5, 11, 6, 2, 14, 3, 10, 12 };
 
-InplaceQuickSort.Sort(ref numbers);
+//InplaceQuickSort.Sort(ref numbers);
+
+// string[] objects = { "BLUE", "RED", "BLUE", "RED", "BLUE", "BLUE", "RED", "RED", "BLUE" };
+
+
+//int endPointer = objects.Length - 1;
+//for (int i = 0; i < objects.Length; i++) 
+//{
+//    if (objects[i] == "BLUE") 
+//    {
+//        endPointer = FindAvailableIndex(endPointer, i); 
+//        if (endPointer != -1)
+//        {
+//            (objects[i], objects[endPointer]) = (objects[endPointer], objects[i]);
+//        }
+//        else break;
+//    }
+//}
+//int FindAvailableIndex(int startIndex, int currentIndex)
+//{
+//    for (int i = startIndex; i > currentIndex; i--)
+//        if (objects[i] == "RED") return i;
+
+//    return -1;
+//}
+
+
+
+//string[] objects = { "BLUE", "RED", "BLUE", "RED", "BLUE", "BLUE", "RED", "RED", "BLUE" };
+
+//int leftPointer = 0, rightPointer = objects.Length - 1;
+
+//while (leftPointer <= rightPointer)
+//{
+//    if(objects[leftPointer] == "BLUE" && objects[rightPointer] == "RED")
+//    {
+//        (objects[leftPointer], objects[rightPointer]) = (objects[rightPointer], objects[leftPointer]);
+//        leftPointer++;
+//        rightPointer--;
+//    }
+//    else if (objects[leftPointer] == "RED")
+//        leftPointer++;
+//    else
+//        rightPointer--;
+   
+//}
+
+//foreach (string obj in objects)
+//{
+//    Console.Write(obj + ", ");
+//}

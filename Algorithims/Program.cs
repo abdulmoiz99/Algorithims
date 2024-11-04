@@ -216,3 +216,8 @@ binaryTree.InOrder();
 //    Console.WriteLine(item.Key + ": " + item.Value);
 //}
 
+
+// IN PLACE QUICK SORT
+int[] numbers = { 9, 7, 5, 11, 6, 2, 14, 3, 10, 12 };
+
+InplaceQuickSort.Sort(ref numbers);

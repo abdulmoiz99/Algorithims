@@ -17,17 +17,17 @@
         {
             stack1.Push(value); // 1
         }
-        public int Dequeue()
+        public int Dequeue() // O(N)
         {
-            if (IsEmpty())
+            if (IsEmpty()) 
             {
                 throw new InvalidOperationException();
             }
-            if (stack2.IsEmpty())
+            if (stack2.IsEmpty()) // O(1)
             {
-                while (!stack1.IsEmpty())
+                while (!stack1.IsEmpty()) // n
                 {
-                    stack2.Push(stack1.Pop());
+                    stack2.Push(stack1.Pop()); // 1
                 }
             }
             return stack2.Pop();

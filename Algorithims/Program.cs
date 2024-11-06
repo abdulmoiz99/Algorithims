@@ -303,5 +303,14 @@ binaryTree.InOrder();
 //    return true;
 //}
 
+int[] array = { 18, 41, 22, 44, 59, 32, 31, 73 };
 
+var linear = new Dictionary();
+
+foreach (int i in array)
+{
+    linear.AddKey(i);
+}
+
+linear.GetAllKeys();
 

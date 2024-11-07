@@ -1,5 +1,6 @@
 ﻿using Algorithims;
 using System.Net;
+using System.Xml.Linq;
 
 
 
@@ -303,14 +304,20 @@ binaryTree.InOrder();
 //    return true;
 //}
 
-int[] array = { 18, 41, 22, 44, 59, 32, 31, 73 };
+//int[] array = { 18, 41, 22, 44, 59, 32, 31, 73 };
 
-var linear = new Dictionary();
+//var linear = new Dictionary();
 
-foreach (int i in array)
-{
-    linear.AddKey(i);
-}
+//foreach (int i in array)
+//{
+//    linear.AddKey(i);
+//}
 
-linear.GetAllKeys();
+//linear.GetAllKeys();
 
+
+//int[] A = { 15, 7, 4, 2, 7, 12 };
+//int[] B = { 15, 2, 6, 2 };
+//int[] C = { 6, 4, 6, 12, 7, 7 };
+
+//Console.WriteLine(ArrayHelper.IsExlusiveOr(A, B, C));

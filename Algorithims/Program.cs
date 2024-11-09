@@ -321,3 +321,13 @@ binaryTree.InOrder();
 //int[] C = { 6, 4, 6, 12, 7, 7 };
 
 //Console.WriteLine(ArrayHelper.IsExlusiveOr(A, B, C));
+
+
+int[] array = { 9,6,5,14,4,12,15,3,2 };
+var heap = new HeapSort();
+
+foreach (var item in array)
+{
+    heap.InsertItem(item);
+}
+heap.Print();

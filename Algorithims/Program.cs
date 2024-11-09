@@ -323,11 +323,28 @@ binaryTree.InOrder();
 //Console.WriteLine(ArrayHelper.IsExlusiveOr(A, B, C));
 
 
-int[] array = { 9,6,5,14,4,12,15,3,2 };
-var heap = new HeapSort();
+//int[] array = { 9,6,5,14,4,12,15,3,2 };
+//var heap = new HeapSort();
 
-foreach (var item in array)
+//foreach (var item in array)
+//{
+//    heap.InsertItem(item);
+//}
+//heap.Print();
+
+
+var dictionary = new Dictionary<int, int>();
+Console.WriteLine(Fibonacci(40, 0));
+Console.WriteLine("102334155");
+int Fibonacci(int n, int fib1)
 {
-    heap.InsertItem(item);
+    if (n == 0) return 0;
+    else if (n == 1) return 1;
+    else
+    {
+        if (fib1 == 0)
+            fib1 = Fibonacci(n - 1, 0);
+
+        return fib1 + Fibonacci(n - 2, fib1);
+    }
 }
-heap.Print();

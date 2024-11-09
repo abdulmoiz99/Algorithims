@@ -348,3 +348,30 @@ binaryTree.InOrder();
 //        return fib1 + Fibonacci(n - 2, fib1);
 //    }
 //}
+
+
+//int[] A = { 15, 7, 4, 2, 7, 12, 2 };
+//int[] B = { 2, 2, 4, 7, 7, 12, 15, 1 };
+
+
+//Console.WriteLine(ContainsTheSameSet(A, B));
+
+//bool ContainsTheSameSet(int[] A, int[] B)
+//{
+//    if (A.Length != B.Length) return false;
+
+//    Array.Sort(A);
+//    Array.Sort(B);
+
+//    return ContainsTheSameSetHelper(A, B, 0);
+//}
+
+//bool ContainsTheSameSetHelper(int[] A, int[] B, int index)
+//{
+
+//    if (index >= A.Length) return true;
+
+//    if (A[index] != B[index]) return false;
+
+//    return ContainsTheSameSetHelper(A, B, index + 1);
+//}

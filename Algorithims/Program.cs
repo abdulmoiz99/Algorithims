@@ -1,5 +1,6 @@
 ﻿using Algorithims;
 using System.Net;
+using System.Reflection.Metadata.Ecma335;
 using System.Xml.Linq;
 
 
@@ -386,4 +387,33 @@ binaryTree.InOrder();
 //list.Print();
 //list.Remove('B');
 //list.Print();
+
+//int[] heap = { 0, 4, 5, 6, 7, 10, 8, 9, 15, 17, 20 };
+
+//var list = new List<int>();
+
+//list = FindMinElements(heap, 7);
+
+//foreach (int element in list)
+//    Console.WriteLine(element);
+
+//List<int> FindMinElements(int[] heap, int value)
+//{
+//    var result = new List<int>();
+//    FindMinElementsHelper(heap, result, value, 1);
+//    return result;
+//}
+
+
+//void FindMinElementsHelper(int[] heap, List<int> result, int value, int index)
+//{
+
+//    if (index > heap.Length - 1) return;
+
+//    if (heap[index] <= value) result.Add(heap[index]);
+
+//    FindMinElementsHelper(heap, result, value, index * 2);
+//    FindMinElementsHelper(heap, result, value, (index * 2) + 1);
+//}
+
 

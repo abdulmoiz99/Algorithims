@@ -375,3 +375,15 @@ binaryTree.InOrder();
 
 //    return ContainsTheSameSetHelper(A, B, index + 1);
 //}
+
+
+//char[] array = { 'B', 'R', 'R' };
+//var list = new DoublyLinkedList();
+//foreach (char c in array)
+//    list.Insert(c);
+
+
+//list.Print();
+//list.Remove('B');
+//list.Print();
+

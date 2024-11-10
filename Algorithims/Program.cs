@@ -417,3 +417,45 @@ binaryTree.InOrder();
 //}
 
 
+
+//int[] array = { 1, 2, 4, 5, 6, 8, 9, 10, 11, 12 };
+
+
+//int start = 0, end = array.Length, index = 0;
+//int min = 3, max = 7;
+
+//while (start < end)
+//{
+//    index = (start + end) / 2;
+
+//    if (array[index] <= min) break;
+
+//    if (min < array[index])
+//    {
+//        end = index + 1;
+//    }
+//    else start = index - 1;
+//}
+
+//for (int i = index; i < array.Length; i++)
+//{
+//    if (array[i] >= min && array[i] <= max)
+//        Console.WriteLine(array[i]);
+
+//    if (array[i] >= max) break;
+//}
+
+
+
+
+
+////*------Binary Search Tree Implementation
+//int[] numbersToInsert = { 4, 3, 6, 1, 5, 7, 8 };
+//var binaryTree = new BinaryTree(numbersToInsert[0]);
+//for (int i = 1; i < numbersToInsert.Length; i++)
+//{
+//    binaryTree.Insert(numbersToInsert[i]);
+//}
+
+//binaryTree.InOrder();
+//binaryTree.FindDeepestNode();

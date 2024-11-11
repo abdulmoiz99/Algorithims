@@ -1,4 +1,5 @@
 ﻿using Algorithims;
+using System.Collections.Generic;
 using System.Net;
 using System.Reflection.Metadata.Ecma335;
 using System.Xml.Linq;
@@ -459,3 +460,42 @@ binaryTree.InOrder();
 
 //binaryTree.InOrder();
 //binaryTree.FindDeepestNode();
+
+
+
+
+
+//int min = int.MaxValue, max = int.MinValue;
+
+//var array = list.ProcessList(ref min, ref max);
+
+//Array.Sort(array);
+
+//int[] result = new int[2];
+//int index = 0;
+//int index2 = 0;
+
+//for (int i = min; i <= max; i++)
+//{
+//    if (array[index] != i)
+//    {
+//        result[index2++] = i;
+//    }
+//    else index++;
+
+//}
+//Console.WriteLine();
+
+
+
+// Implemtation Of Doubly Linked List
+
+var list = new DoublyLinkedList();
+
+list.Insert(13);
+list.Insert(10);
+list.Insert(11);
+list.Insert(15);
+list.Insert(9);
+
+list.Print();

@@ -6,7 +6,7 @@ namespace Algorithims
     {
         Node header;
 
-        public void Insert(char value)
+        public void Insert(int value)
         {
             Node current = header;
             if (current == null)
@@ -38,7 +38,25 @@ namespace Algorithims
             }
             Console.WriteLine();
         }
-        public void Remove(char c)
+        public int[] ProcessList(ref int min, ref int max)
+        {
+            Node current = header;
+            int[] array = new int[5];
+            int index = 0;
+
+            while (current != null)
+            {
+                int value = current.value;
+
+                if(value < min) min = value;
+                else if(value > max) max = value;
+                array[index++] = value;
+                current = current.next;
+            }
+
+            return array;
+        }
+        public void Remove(int c)
         {
             Node current = header;
             while (current != null)
@@ -98,7 +116,7 @@ namespace Algorithims
             node2.next = node1;
         }
 
-        public void SortList(char c)
+        public void SortList(int c)
         {
             Node current = header;
             while (current != null)
@@ -123,7 +141,7 @@ namespace Algorithims
 
 
 
-        public char FindMiddleElement() // O(n)
+        public int FindMiddleElement() // O(n)
         {
             Node slow = header; // 1
             Node fast = header; // 1
@@ -141,7 +159,7 @@ namespace Algorithims
         class Node
         {
             public Node previous;
-            public char value;
+            public int value;
             public Node next;
         }
     }

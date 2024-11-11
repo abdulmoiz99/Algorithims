@@ -43,7 +43,7 @@ namespace Algorithims
                     deepest = item.Value;
                 }
             }
-            Console.WriteLine("Max Depth:" + max + " Node Value: " + depest?.element);
+            Console.WriteLine("Max Depth:" + max + " Node Value: " + deepest?.element);
 
         }
 

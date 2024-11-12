@@ -1,12 +1,10 @@
-﻿using System;
-using System.Text;
-namespace Algorithims
+﻿namespace Algorithims
 {
     internal class DoublyLinkedList
     {
         Node header;
 
-        public void Insert(int value)
+        public void Insert(char value)
         {
             Node current = header;
             if (current == null)
@@ -38,25 +36,25 @@ namespace Algorithims
             }
             Console.WriteLine();
         }
-        public int[] ProcessList(ref int min, ref int max)
+        public char[] ProcessList(ref char min, ref char max)
         {
             Node current = header;
-            int[] array = new int[5];
+            char[] array = new char[5];
             int index = 0;
 
             while (current != null)
             {
-                int value = current.value;
+                char value = current.value;
 
-                if(value < min) min = value;
-                else if(value > max) max = value;
+                if (value < min) min = value;
+                else if (value > max) max = value;
                 array[index++] = value;
                 current = current.next;
             }
 
             return array;
         }
-        public void Remove(int c)
+        public void Remove(char c)
         {
             Node current = header;
             while (current != null)
@@ -87,61 +85,52 @@ namespace Algorithims
 
             return result;
         }
-        private void SwapElements(Node node1, Node node2)
+        private void SwapElements(Node a, Node b)
         {
-            // Ensure node1 comes before node2 in the list
-            if (node1.next != node2)
-            {
-                Node temp = node1;
-                node1 = node2;
-                node2 = temp;
-            }
-
-            // Swap connections of node1
-            Node node1Prev = node1.previous;
-            Node node2Next = node2.next;
-
-            if (node1Prev != null)
-                node1Prev.next = node2;
-            else
-                header = node2; // Update header if node1 is the first node
-
-            node2.previous = node1Prev;
-            node1.next = node2Next;
-
-            if (node2Next != null)
-                node2Next.previous = node1;
-
-            node1.previous = node2;
-            node2.next = node1;
+            char temp = a.value;
+            a.value = b.value;
+            b.value = temp;
         }
 
-        public void SortList(int c)
+        public void SortList(char c, Node current = null)
         {
-            Node current = header;
+
+            if(current == null)
+                current = header;
+
             while (current != null)
             {
-                if (current.value == 'B')
-                {
-                    Node runner = current.next;
-
-                    while (runner != null && runner.value == 'B')
-                    {
-                        runner = runner.next;
-                    }
-
-                    if (runner != null)
-                        SwapElements(current, runner);
-
-                }
+                if (current.value != c)
+                    break;
 
                 current = current.next;
             }
+            Node next = current.next;
+
+            while (next != null)
+            {
+                if (next.value == c)
+                {
+                    SwapElements(current, next);
+                    current = current.next;
+                }
+                next = next.next;
+            }
+        }
+        public void SortListWithSkip(char c, char skipChar)
+        {
+            Node current = header;
+            while(current!= null)
+            {
+                if (current.value != c)
+                    break;
+                else current = current.next;
+            }
+            SortList(c, current);
         }
 
 
-
-        public int FindMiddleElement() // O(n)
+        public char FindMiddleElement() // O(n)
         {
             Node slow = header; // 1
             Node fast = header; // 1
@@ -156,10 +145,10 @@ namespace Algorithims
         }
 
 
-        class Node
+        public class Node
         {
             public Node previous;
-            public int value;
+            public char value;
             public Node next;
         }
     }

@@ -490,12 +490,30 @@ binaryTree.InOrder();
 
 // Implemtation Of Doubly Linked List
 
-var list = new DoublyLinkedList();
+//var list = new DoublyLinkedList();
 
-list.Insert(13);
-list.Insert(10);
-list.Insert(11);
-list.Insert(15);
-list.Insert(9);
+//list.Insert('R');
+//list.Insert('B');
+//list.Insert('G');
+//list.Insert('R');
+//list.Insert('R');
+//list.Insert('B');
+//list.Insert('B');
+//list.Insert('B');
+//list.Insert('G');
+//list.Insert('R');
+//list.Insert('G');
 
-list.Print();
+
+
+
+//list.Print();
+
+//list.SortList('R');
+//list.SortListWithSkip('B', 'G');
+
+
+
+//list.Print();
+
+

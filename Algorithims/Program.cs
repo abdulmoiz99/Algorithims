@@ -517,3 +517,21 @@ binaryTree.InOrder();
 //list.Print();
 
 
+
+var fibonacciStore = new Dictionary<int, int>();
+
+Console.WriteLine(Fibonacci(40));
+
+int Fibonacci(int n)
+{
+    if (n == 0) return 0;
+    else if (n == 1) return 1;
+
+    if (!fibonacciStore.ContainsKey(n))
+    {
+        int result = Fibonacci(n - 1) + Fibonacci(n - 2);
+        fibonacciStore[n] = result;
+    }
+
+    return fibonacciStore[n];
+}

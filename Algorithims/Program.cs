@@ -1,5 +1,8 @@
 ﻿using Algorithims;
+using System.Collections.Generic;
 using System.Net;
+using System.Reflection.Metadata.Ecma335;
+using System.Xml.Linq;
 
 
 
@@ -303,14 +306,232 @@ binaryTree.InOrder();
 //    return true;
 //}
 
-int[] array = { 18, 41, 22, 44, 59, 32, 31, 73 };
+//int[] array = { 18, 41, 22, 44, 59, 32, 31, 73 };
 
-var linear = new Dictionary();
+//var linear = new Dictionary();
 
-foreach (int i in array)
+//foreach (int i in array)
+//{
+//    linear.AddKey(i);
+//}
+
+//linear.GetAllKeys();
+
+
+//int[] A = { 15, 7, 4, 2, 7, 12 };
+//int[] B = { 15, 2, 6, 2 };
+//int[] C = { 6, 4, 6, 12, 7, 7 };
+
+//Console.WriteLine(ArrayHelper.IsExlusiveOr(A, B, C));
+
+
+//int[] array = { 9,6,5,14,4,12,15,3,2 };
+//var heap = new HeapSort();
+
+//foreach (var item in array)
+//{
+//    heap.InsertItem(item);
+//}
+//heap.Print();
+
+
+//var dictionary = new Dictionary<int, int>();
+//Console.WriteLine(Fibonacci(40, 0));
+//Console.WriteLine("102334155");
+//int Fibonacci(int n, int fib1)
+//{
+//    if (n == 0) return 0;
+//    else if (n == 1) return 1;
+//    else
+//    {
+//        if (fib1 == 0)
+//            fib1 = Fibonacci(n - 1, 0);
+
+//        return fib1 + Fibonacci(n - 2, fib1);
+//    }
+//}
+
+
+//int[] A = { 15, 7, 4, 2, 7, 12, 2 };
+//int[] B = { 2, 2, 4, 7, 7, 12, 15, 1 };
+
+
+//Console.WriteLine(ContainsTheSameSet(A, B));
+
+//bool ContainsTheSameSet(int[] A, int[] B)
+//{
+//    if (A.Length != B.Length) return false;
+
+//    Array.Sort(A);
+//    Array.Sort(B);
+
+//    return ContainsTheSameSetHelper(A, B, 0);
+//}
+
+//bool ContainsTheSameSetHelper(int[] A, int[] B, int index)
+//{
+
+//    if (index >= A.Length) return true;
+
+//    if (A[index] != B[index]) return false;
+
+//    return ContainsTheSameSetHelper(A, B, index + 1);
+//}
+
+
+//char[] array = { 'B', 'R', 'R' };
+//var list = new DoublyLinkedList();
+//foreach (char c in array)
+//    list.Insert(c);
+
+
+//list.Print();
+//list.Remove('B');
+//list.Print();
+
+//int[] heap = { 0, 4, 5, 6, 7, 10, 8, 9, 15, 17, 20 };
+
+//var list = new List<int>();
+
+//list = FindMinElements(heap, 7);
+
+//foreach (int element in list)
+//    Console.WriteLine(element);
+
+//List<int> FindMinElements(int[] heap, int value)
+//{
+//    var result = new List<int>();
+//    FindMinElementsHelper(heap, result, value, 1);
+//    return result;
+//}
+
+
+//void FindMinElementsHelper(int[] heap, List<int> result, int value, int index)
+//{
+
+//    if (index > heap.Length - 1) return;
+
+//    if (heap[index] <= value) result.Add(heap[index]);
+
+//    FindMinElementsHelper(heap, result, value, index * 2);
+//    FindMinElementsHelper(heap, result, value, (index * 2) + 1);
+//}
+
+
+
+//int[] array = { 1, 2, 4, 5, 6, 8, 9, 10, 11, 12 };
+
+
+//int start = 0, end = array.Length, index = 0;
+//int min = 3, max = 7;
+
+//while (start < end)
+//{
+//    index = (start + end) / 2;
+
+//    if (array[index] <= min) break;
+
+//    if (min < array[index])
+//    {
+//        end = index + 1;
+//    }
+//    else start = index - 1;
+//}
+
+//for (int i = index; i < array.Length; i++)
+//{
+//    if (array[i] >= min && array[i] <= max)
+//        Console.WriteLine(array[i]);
+
+//    if (array[i] >= max) break;
+//}
+
+
+
+
+
+////*------Binary Search Tree Implementation
+//int[] numbersToInsert = { 4, 3, 6, 1, 5, 7, 8 };
+//var binaryTree = new BinaryTree(numbersToInsert[0]);
+//for (int i = 1; i < numbersToInsert.Length; i++)
+//{
+//    binaryTree.Insert(numbersToInsert[i]);
+//}
+
+//binaryTree.InOrder();
+//binaryTree.FindDeepestNode();
+
+
+
+
+
+//int min = int.MaxValue, max = int.MinValue;
+
+//var array = list.ProcessList(ref min, ref max);
+
+//Array.Sort(array);
+
+//int[] result = new int[2];
+//int index = 0;
+//int index2 = 0;
+
+//for (int i = min; i <= max; i++)
+//{
+//    if (array[index] != i)
+//    {
+//        result[index2++] = i;
+//    }
+//    else index++;
+
+//}
+//Console.WriteLine();
+
+
+
+// Implemtation Of Doubly Linked List
+
+//var list = new DoublyLinkedList();
+
+//list.Insert('R');
+//list.Insert('B');
+//list.Insert('G');
+//list.Insert('R');
+//list.Insert('R');
+//list.Insert('B');
+//list.Insert('B');
+//list.Insert('B');
+//list.Insert('G');
+//list.Insert('R');
+//list.Insert('G');
+
+
+
+
+//list.Print();
+
+//list.SortList('R');
+//list.SortListWithSkip('B', 'G');
+
+
+
+//list.Print();
+
+
+
+var fibonacciStore = new Dictionary<int, int>();
+
+Console.WriteLine(Fibonacci(40));
+
+int Fibonacci(int n)
 {
-    linear.AddKey(i);
+    if (n == 0) return 0;
+    else if (n == 1) return 1;
+
+    if (!fibonacciStore.ContainsKey(n))
+    {
+        int result = Fibonacci(n - 1) + Fibonacci(n - 2);
+        fibonacciStore[n] = result;
+    }
+
+    return fibonacciStore[n];
 }
-
-linear.GetAllKeys();
-
